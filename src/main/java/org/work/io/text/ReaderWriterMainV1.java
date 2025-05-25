@@ -1,17 +1,14 @@
 package org.work.io.text;
 
-import org.work.io.buffered.BufferedConst;
-
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 
 import static java.nio.charset.StandardCharsets.*;
 import static org.work.io.buffered.BufferedConst.*;
 
-public class ReaderWRiterMainV1 {
+public class ReaderWriterMainV1 {
 
     public static void main(String[] args) throws IOException {
         String writeString = "ABC";
