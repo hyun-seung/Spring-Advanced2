@@ -32,7 +32,7 @@ public class ServletManager {
         this.internalErrorServlet = internalErrorServlet;
     }
 
-    public void execute(HttpRequest request, HttpResponse response) throws IOException {
+    public void execute(HttpRequest request, HttpResponse response) throws IOException, IllegalAccessException {
         try {
             HttpServlet servlet = servletMap.getOrDefault(request.getPath(), defaultServlet);
             if (servlet == null) {

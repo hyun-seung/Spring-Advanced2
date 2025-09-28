@@ -41,6 +41,8 @@ public class HttpRequestHandler implements Runnable {
             response.flush();
             log("HTTP 응답 완료");
 
+        } catch (IllegalAccessException e) {
+            throw new RuntimeException(e);
         }
     }
 
